@@ -132,9 +132,6 @@
         overflow: unset;
     }
 }
-  @media only screen and (max-width: 587px){
-
-  }
 
   @media only screen and (max-width: 991px){
     .left-box-bg img{

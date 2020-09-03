@@ -7,9 +7,8 @@ function Menubar() {
 
   const handleClick = (e) => {
     e.preventDefault();
-
-    const id = e.target.parentNode.getAttribute("data-label");
-
+    const node = e.target.parentNode.nodeName === 'A' ? e.target.parentNode.parentNode : e.target.parentNode;
+    const id = node.getAttribute("data-label");
     const updatedState = {
       ...toggle,
       [id]: !toggle[id],
