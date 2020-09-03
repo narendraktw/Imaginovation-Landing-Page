@@ -1,6 +1,7 @@
 .ourwork{
     position: relative;
-    min-height: fit-content;
+    overflow: hidden;
+    min-height: 100vh;
 }
 
 .ourwork_content{
@@ -126,6 +127,10 @@
     }
     .ourwork_content{width:100%}
     .ourwork_content{margin-left:0px;}
+    .ourwork{
+        min-height:fit-content;
+        overflow: unset;
+    }
 }
   @media only screen and (max-width: 587px){
 
