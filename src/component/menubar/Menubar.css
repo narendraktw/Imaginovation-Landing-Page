@@ -1,0 +1,233 @@
+.cover {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 150px 30px 0 30px;
+}
+
+.nav-menu > ul {
+  width: 100%;
+  height: 100%;
+  padding: 0 60px 0 0;
+  box-sizing: content-box;
+  margin: 0;
+}
+
+.nav-menu > ul li {
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: list-item;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 67.6087px;
+  line-height: 20px;
+  list-style-type: none;
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+.nav-menu > ul > li::before {
+  content: " ";
+  margin-right: 30px;
+  color: #fff;
+  height: 50px;
+  border-left: 3px solid #57cad1;
+  padding: 15px 0;
+}
+
+.nav-menu > ul > li > a {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  height: 42px;
+  line-height: 42px;
+  outline-color: rgb(87, 202, 209);
+  outline-style: none;
+  outline-width: 0px;
+  text-align: left;
+  text-decoration-color: rgb(87, 202, 209);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition: all 0.3s ease-out;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.nav-menu > ul > li > a:hover {
+  color: rgb(87, 202, 209);
+}
+
+.nav-menu .multi-menu {
+  height: auto;
+}
+
+.nav-menu .multi-menu a,
+.nav-menu .multi-menu span {
+  display: inline-flex;
+}
+
+.nav-menu .multi-menu i {
+  transition: transform 300ms;
+  display: inline-flex;
+  align-self: center;
+  font-size: 30px;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.nav-menu .multi-menu.selected i{
+  transition: transform 300ms;
+  transform: rotate(180deg);
+}
+
+.nav-menu .sub-menu {
+  display: none;
+  width: fit-content;
+  padding-left: 0;
+  margin-left: 25px;
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: solid thin #fff;
+}
+
+.nav-menu .multi-menu.selected .sub-menu {
+  display: block;
+}
+
+.nav-menu .sub-menu li {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.nav-menu .sub-menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 300ms;
+}
+
+.nav-menu .sub-menu li:hover a{
+  color: #57cad1;
+  transition: color 300ms;
+}
+
+.nav-menu .sub-menu li:hover a > i{
+  color: #57cad1;
+  transition: color 300ms;
+}
+
+.contact-details > ul {
+  padding-bottom: 15px;
+}
+
+.contact-details {
+  padding-right: 60px;
+}
+
+.contact-details li {
+  display: block;
+  line-height: 36px;
+  height: 36px;
+}
+
+.contact-details li > a,
+.contact-details li > i {
+  font-size: 24px;
+}
+
+.contact-details li > i {
+  color: #fff;
+}
+
+.contact-details li > a {
+  margin-left: 20px;
+  color: #ee3124;
+  text-decoration: none;
+}
+
+.contact-details .social-links {
+  margin-top: 6%;
+}
+
+.contact-details .social-links li {
+  list-style: none;
+  display: inline-block;
+}
+
+.contact-details .social-links li a,
+.contact-details .social-links li i {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 0;
+  transition: color 300ms;
+}
+
+.contact-details .social-links li + li {
+  width: fit-content;
+  margin-left: 30px;
+}
+
+.contact-details .social-links li:hover a,
+.contact-details .social-links li:hover i {
+  color: #57cad1;
+  transition: color 300ms;
+}
+
+.contact-details .site-add {
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+.contact-details .site-add .title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact-details .site-add .title::after {
+  content: '';
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: block;
+  width: 48px;
+  margin: 10px 0;
+}
+
+.contact-details .site-add .site-content p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.nav-menu > ul,
+.contact-details {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+}
+
+.nav-menu > ul::-webkit-scrollbar,
+.contact-details::-webkit-scrollbar{
+  display: none;
+}
+
+
+/* Responsive CSS */
+
+@media (max-width:768px) {
+  .contact-details {
+    display: none;
+  }
+}

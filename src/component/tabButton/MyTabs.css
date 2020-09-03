@@ -1,0 +1,24 @@
+
+.MuiTab-textColorInherit{
+    color: white !important;
+    border: 1px solid red !important;
+    padding: 14px !important;
+    margin-left:20px!important;
+    flex:.3
+}
+
+.MuiTab-wrapper{
+    font-size: 18px !important;
+    line-height: 36px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+}
+
+.MuiTab-textColorInherit.Mui-selected{
+    background-color:#ee2f2c !important;
+}
+
+.MuiTab-root{
+    max-width: none !important;
+}

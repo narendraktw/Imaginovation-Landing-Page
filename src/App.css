@@ -1,0 +1,25 @@
+.app{
+  display: flex;
+  height: 100vh;
+  flex-direction:column;
+}
+
+.wrapper {
+  width: 90vw; 
+  padding-top:60px;
+  margin: 0 auto;
+
+}
+
+
+h1{
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ed1f26;
+  margin-bottom: 30px;
+}
+
+.clear{
+  clear: both;
+}

@@ -1,0 +1,115 @@
+.services{
+    flex: 1;
+    background-image: url("../../assets/images/home-service-bg.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.webdev{
+    width:90vw;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.inner-content{
+    display: flex;
+
+}
+
+.left-content{
+    flex:.5;
+}
+
+.left-content img{
+    width:100%
+}
+
+.right-content{
+    flex:.5;    
+    padding-left:20px
+}
+
+.right-content h2{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #57cad1;
+    line-height: normal;
+    margin-bottom: 15px;
+    font-size:20px;
+}
+
+.right-content p{
+    margin-bottom: 20px;
+    color:white;
+    font-size:14px;
+    line-height:24px;
+}    
+
+.emgtech{
+    display: flex;
+    padding-top:30px;
+}
+
+.et{
+    flex: .2;
+}
+
+.et .et-img{
+    margin:0 auto;
+    padding-top: 30px;
+}
+
+.et h3{
+    font-size:15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight:normal;
+}
+
+.et img{
+   
+    height: 150px !important;
+    max-height: 100%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.et .techIcon{
+    max-height: 70px;
+}
+
+.readMore{
+    background:none;
+    border-color: #57cad1;
+    padding:8px 25px;
+}
+
+.readMore span{ 
+    background-color: #57cad1;
+}
+
+
+/*Start media query for responsive*/
+@media only screen and (max-width: 767px){
+   .inner-content{
+       flex-direction: column;
+   }
+   .right-content{
+       padding-top:20px;
+   }
+
+   .et{
+       flex:.3;
+       padding-left: 20px;
+   }
+   .emgtech{
+    flex-wrap: wrap;
+   }
+   .MuiTab-wrapper{
+       font-size: 14px !important;
+       line-height: 22px !important;
+   }
+}
+/*End media query for responsive*/

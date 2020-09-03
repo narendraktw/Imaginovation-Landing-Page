@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.73 381.12" style="height:100%; width:10%;">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #00acfe
+            }
+
+            .cls-2 {
+                fill: #59c9fe;
+                opacity: 0.9
+            }
+
+            .cls-3 {
+                fill: #73d1fe;
+                opacity: 0.8
+            }
+
+            .cls-4 {
+                fill: #8cdaff;
+                opacity: 0.6
+            }
+
+            .cls-5 {
+                fill: #a6e2ff;
+                opacity: 0.4
+            }
+
+            .cls-6 {
+                fill: #bfeaff;
+                opacity: 0.3
+            }
+
+            .cls-7 {
+                opacity: 0.2;
+                fill: #d9f3ff
+            }
+        </style>
+    </defs>
+    <g>
+        <g id="Layer_dots_1-2" data-name="Layer 1">
+            <circle class="cls-1" cx="13.36" cy="367.76" r="13.36">
+                <animate attributeName="opacity" values="0;1;1;1;1;1;1;0" begin="0s" dur="3s"
+                    repeatCount="indefinite" />
+            </circle>
+            <circle class="cls-2" cx="13.36" cy="293.8" r="11.41">
+                <animate attributeName="opacity" values="0;0;1;1;1;1;1;1;0" begin="0s" dur="3s"
+                    repeatCount="indefinite" />
+            </circle>
+            <circle class="cls-3" cx="13.36" cy="228.18" r="10.78">
+                <animate attributeName="opacity" values="0;0;0;1;1;1;1;1;0" begin="0s" dur="3s"
+                    repeatCount="indefinite" />
+            </circle>
+            <circle class="cls-4" cx="13.36" cy="164.39" r="9.49">
+                <animate attributeName="opacity" values="0;0;0;0;1;1;1;1;0" begin="0s" dur="3s"
+                    repeatCount="indefinite" />
+            </circle>
+            <circle class="cls-5" cx="13.36" cy="110.45" r="8.05">
+                <animate attributeName="opacity" values="0;0;0;0;0;1;1;1;0" begin="0s" dur="3s"
+                    repeatCount="indefinite" />
+            </circle>
+            <circle class="cls-6" cx="13.36" cy="57.27" r="6.87">
+                <animate attributeName="opacity" values="0;0;0;0;0;0;1;1;0" begin="0s" dur="3s"
+                    repeatCount="indefinite" />
+            </circle>
+            <circle class="cls-7" cx="13.36" cy="5.86" r="5.86">
+                <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;0" begin="0s" dur="3s"
+                    repeatCount="indefinite" />
+            </circle>
+        </g>
+    </g>
+</svg>
