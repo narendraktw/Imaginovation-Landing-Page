@@ -1,7 +1,4 @@
 import React from "react";
-import ReactDom from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import MyTabs from "../tabButton/MyTabs";
 import "./Services.css";
 

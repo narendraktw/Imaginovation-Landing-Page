@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Tabs, Tab, AppBar } from "@material-ui/core";
-import WebDev from "./WebDev";
-import MobileDev from "./MobileDev";
-import EmgTech from "./EmgTech";
+import { Tabs, Tab} from "@material-ui/core";
+import WebDev from "../services/WebDev";
+import MobileDev from "../services/MobileDev";
+import EmgTech from "../services/EmgTech";
 import "./MyTabs.css";
 
 function MyTabs() {
