@@ -153,6 +153,13 @@ footer.footer {
   .footer section .service-box{
     flex-direction: column;
   }
+  .service-box .social-box li {
+    line-height:35px;
+  }
+  .header hgroup>div{
+    text-align:center;
+    margin-left: 0px;
+  }
 }
 
 @media only screen and (max-width: 1300px) and (min-width: 767px){

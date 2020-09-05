@@ -4,7 +4,6 @@ import FontAwesome from 'react-fontawesome';
 
 const Modal = (props) => {
   const { closeModal } = props;
-
   const closeicon = () => (
     <FontAwesome
     name="times"

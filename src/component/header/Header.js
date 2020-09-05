@@ -6,6 +6,7 @@ import Menubar from '../menubar/Menubar';
 
 import RocketImg from "../../assets/images/rocket-opt-img.png";
 import Menu from "../../assets/images/menu.png";
+import TelIcon from "../../assets/images/download.png";
 import "./Header.css";
 import Modal from "../../common/modal/modal";
 
@@ -26,6 +27,7 @@ function Header() {
         <menu>
           { isToggle && <Menubar /> }
           <Button className="talkbutton" text="LET'S TALK" />
+          <img src={TelIcon} className="telIcon"/>
           <button
             aria-label="menu"
             className={isToggle ? "rotate" : ''}
@@ -62,13 +64,14 @@ function Header() {
               height="100%"
               src="https://www.youtube.com/embed/aN3odcBtkFA"
               frameborder="0"
+              allowfullscreen="true"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             ></iframe>
           </Modal>
         )}
-        <div className="container">
+        {/* <div className="container">
           <h2>This is the page content</h2>
-        </div>
+        </div> */}
       </div>
     </header>
   );

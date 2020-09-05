@@ -13,11 +13,16 @@ function App() {
     <main className="app">
     
      <Header />
-       <CustomerValue />
+      <CustomerValue />
       <ClientDetails />
       <OurWork />
       <Services/>
       <Footer />
+     
+      {/* <OurWork />
+      <div className="clear"></div>
+      <Services/> */}
+      
     </main>
   );
 }

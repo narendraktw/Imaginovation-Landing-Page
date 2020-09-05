@@ -66,6 +66,10 @@
   color: rgb(87, 202, 209);
 }
 
+.nav-menu > ul > li:first-child > a {
+  color: rgb(87, 202, 209);
+}
+
 .nav-menu .multi-menu {
   height: auto;
 }
@@ -224,10 +228,11 @@
 }
 
 
-/* Responsive CSS */
+/*Start media query for responsive*/
 
 @media (max-width:768px) {
   .contact-details {
     display: none;
   }
 }
+/*End media query for responsive*/
