@@ -15,7 +15,7 @@
     padding: 0;
 }
 
-.bbox > img{
+.bbox img{
     max-width: 70%;
     vertical-align: middle;
 }

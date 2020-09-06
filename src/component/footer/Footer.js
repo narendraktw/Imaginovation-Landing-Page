@@ -4,7 +4,6 @@ import Expertise from "../../assets/images/expertise.png";
 import Goodfirm from "../../assets/images/goodfirm.png";
 import Clutch from "../../assets/images/clutch.png";
 import Localagency from "../../assets/images/localagency.png";
-
 import "./Footer.css";
 
 function Footer() {
@@ -108,9 +107,11 @@ function Footer() {
                 </li>
                 <li>
                   <i className="fa fa-envelope" aria-hidden="true"></i>
-                  <span>sales@imaginovation.net</span>
-                  <span>
-                    <a href="#">
+                  <span>sales@imaginovation.net</span>                 
+                </li>
+              </ul>
+              <div className="footer-social-links">
+              <a href="#">
                       <i className="fa fa-facebook" aria-hidden="true"></i>
                     </a>
                     <a href="#">
@@ -125,9 +126,8 @@ function Footer() {
                     <a href="#">
                       <i className="fa fa-instagram" aria-hidden="true"></i>
                     </a>
-                  </span>
-                </li>
-              </ul>
+              </div>
+              
             </div>
         </div>
       </section>
