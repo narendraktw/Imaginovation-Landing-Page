@@ -1,10 +1,9 @@
 @mixin flexCenter($direction) {
-    display: flex;
-    height: 100vh;
-    flex-direction: $direction;
-    justify-content: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: $direction;
+  justify-content: center;
 }
-
 
 .header {
   background: url("../../assets/images/HP-banner-3.jpg") center center;
@@ -39,8 +38,8 @@
     z-index: 102;
   }
 
-  .overlay{
-    cursor:default;
+  .overlay {
+    cursor: default;
   }
 
   menu {
@@ -91,16 +90,62 @@
       background-position: center center;
       padding: 50px;
 
-      .form{
+      .form {
         display: flex;
-        .form-left{
-          flex:.5;
+        .form-left {
+          flex: 0.5;
+          .addressinfo {
+            margin-bottom: 40px;
+            color: white;
+            .p {
+              text-transform: uppercase;
+              font-weight: 500;
+              margin-bottom: 10px;
+              font-size: 22px;
+            }
+            .address-text {
+              font-size: 12px;
+            }
+          }
+          .social-links a {
+            color: #fff;
+            margin-left: 3px;
+            font-size: 24px;
+            line-height: normal;
+            background: #161e5661;
+            padding: 6px 10px;
+            line-height: 60px;
+            vertical-align: middle;
+            text-decoration: none;
+          }
+          .social-links a:hover {
+            color: #ed1f26;
+          }
         }
-        .form-right{
-          flex: .5;          
+        .form-right {
+          flex: 0.5;
+          form input,
+          textarea {
+            margin-bottom: 15px;
+            border: 1px solid #bbb1e5;
+            border-radius: 0;
+            background-color: transparent;
+            color: #e0e0e0;
+            height: 40px;
+            box-sizing: border-box !important;
+            padding: 6px 12px;
+            width: 100% !important;
+            font-size: 14px;
+            font-weight: 400;
+          
+          }
+          input[type="submit"]{
+            background-color: #ed1f26 !important;
+            border-color: #ed1f26 !important;
+            cursor: pointer;
+          }
         }
       }
-
     }
   }
 }

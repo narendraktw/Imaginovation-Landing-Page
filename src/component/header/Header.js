@@ -66,7 +66,6 @@ function Header() {
                 <h1>Let's Talk</h1>
                 <div className="form">
                   <div className="form-left">
-                    <div className="address-box">
                       <div className="addressinfo">
                         <p className="address-name">RALEIGH</p>
                         <div className="address-text">
@@ -88,31 +87,9 @@ function Header() {
                           <p>Charlotte NC 28277</p>
                         </div>
                       </div>
-                      <div className="form-right">
-                        {/* "handleSubmit" will validate your inputs before invoking "onSubmit" */}
-                        <form onSubmit={handleSubmit(onSubmit)}>
-                          {/* register your input into the hook by invoking the "register" function */}
-                          <input
-                            name="example"
-                            defaultValue="test"
-                            ref={register}
-                          />
-
-                          {/* include validation with required or other standard HTML validation rules */}
-                          <input
-                            name="exampleRequired"
-                            ref={register({ required: true })}
-                          />
-                          {/* errors will return when field validation fails  */}
-                          {errors.exampleRequired && (
-                            <span>This field is required</span>
-                          )}
-
-                          <input type="submit" />
-                        </form>
-                      </div>
-                    </div>
-                    <div className="footer-social-links">
+                      
+                    
+                    <div className="social-links">
                       <a href="#">
                         <i className="fa fa-facebook" aria-hidden="true"></i>
                       </a>
@@ -133,6 +110,39 @@ function Header() {
                       </a>
                     </div>
                   </div>
+                  <div className="form-right">
+                        <form onSubmit={handleSubmit(onSubmit)}>
+                          {/* register your input into the hook by invoking the "register" function */}
+                          <input
+                            name="form"
+                            placeholder="Name"
+                            ref={register}
+                          />
+
+                          {/* include validation with required or other standard HTML validation rules */}
+                          <input
+                            name="formRequired"
+                            placeholder="Email"
+                            ref={register({ required: true })}
+                          />
+                           <input
+                            name="formRequired"
+                            placeholder="Phone Number"
+                            ref={register}
+                          />
+                          <textarea
+                            name="formRequired"
+                            placeholder="How can we help your business?"
+                            ref={register}
+                          />
+                          {/* errors will return when field validation fails  */}
+                          {errors.exampleRequired && (
+                            <span>This field is required</span>
+                          )}
+
+                          <input type="submit" />
+                        </form>
+                      </div>
                 </div>
               </div>
             </Modal>
