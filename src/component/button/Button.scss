@@ -1,0 +1,50 @@
+.button {
+    position: relative;
+    height: auto;
+    width: fit-content;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+    border: solid 2px #fff;
+    display: block;
+    padding: 12px 18px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    text-decoration: none;
+  
+    &:focus {
+      outline: none;
+    }
+  
+    &:hover {
+      outline: none;
+      outline: none;
+    }
+  
+    div {
+      position: relative;
+      z-index: 2;
+    }
+  
+    span {
+      width: 100%;
+      height: 0;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: #ee3124;
+      transition: height 500ms, background 500ms;
+    }
+  
+    &:hover span {
+      height: 100%;
+      transition: height 500ms, background 500ms;
+    }
+  }
+  
+  .readMore:hover span {
+    background: #57cad1;
+    height: 100%;
+    transition: height 500ms, background 500ms;
+  }

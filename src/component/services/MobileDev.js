@@ -33,4 +33,4 @@ function MobileDev() {
   );
 }
 
-export default MobileDev;
+export default React.memo(MobileDev);

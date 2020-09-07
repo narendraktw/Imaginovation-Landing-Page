@@ -1,0 +1,52 @@
+.clientDetails {
+    margin-bottom: 20px;
+  }
+  
+  .brand {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .bbox {
+    flex: .25;
+    flex-direction: row;
+    text-align: left;
+    padding: 0;
+  
+    img {
+      max-width: 70%;
+      vertical-align: middle;
+    }
+  }
+  
+  .firstRow .bbox:nth-child(3) img {
+    margin-top: -25px;
+  }
+  
+  /*Start media query for responsive*/
+  @media only screen and (max-width: 767px) {
+    .bbox {
+      flex: 0.5;
+  
+      > img {
+        max-width: 130px;
+      }
+    }
+  
+    .brand {
+      margin-top: 30px;
+    }
+  
+    .firstRow .bbox:nth-child(3) img {
+      margin-top: -15px;
+    }
+  }
+  
+  @media only screen and (max-width: 587px) {
+    .bbox {
+      flex: 0.5;
+    }
+  }
+  
+  /*End media query for responsive*/

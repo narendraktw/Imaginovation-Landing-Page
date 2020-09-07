@@ -1,49 +1,62 @@
-.clientDetails{
-    margin-bottom:20px;
+.clientDetails {
+  margin-bottom: 20px;
 }
 
-.brand{
-    display: flex;
-    margin-top:50px;
-    flex-wrap: wrap;
+.brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.bbox{
-    flex:.25;
-    flex-direction: row;
-    text-align: left;
-    padding: 0;
+.bbox {
+  -webkit-box-flex: .25;
+      -ms-flex: .25;
+          flex: .25;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: left;
+  padding: 0;
 }
 
-.bbox img{
-    max-width: 70%;
-    vertical-align: middle;
+.bbox img {
+  max-width: 70%;
+  vertical-align: middle;
 }
 
-.firstRow .bbox:nth-child(3) img{
-    margin-top: -25px;
-} 
+.firstRow .bbox:nth-child(3) img {
+  margin-top: -25px;
+}
 
 /*Start media query for responsive*/
-@media only screen and (max-width: 767px){
-    .bbox{
-        flex:.5
-        
-    }
-    .bbox > img{
-        max-width: 130px;
-    }  
-    .brand{margin-top:30px;}
-    .firstRow .bbox:nth-child(3) img {
-        margin-top: -15px;
-    }
+@media only screen and (max-width: 767px) {
+  .bbox {
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+            flex: 0.5;
+  }
+  .bbox > img {
+    max-width: 130px;
+  }
+  .brand {
+    margin-top: 30px;
+  }
+  .firstRow .bbox:nth-child(3) img {
+    margin-top: -15px;
+  }
 }
 
-@media only screen and (max-width: 587px){
-    .bbox{
-        flex:.5
-        
-    }
-    
+@media only screen and (max-width: 587px) {
+  .bbox {
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+            flex: 0.5;
+  }
 }
+
 /*End media query for responsive*/
+/*# sourceMappingURL=ClientDetails.css.map */

@@ -12,6 +12,10 @@ footer.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -21,6 +25,10 @@ footer.footer {
 
 .footer p {
   color: #fff;
+  text-align: left;
+}
+
+.footer > p {
   text-align: center;
   padding: 20px 3%;
 }
@@ -29,8 +37,6 @@ footer.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 3% 50px 3%;
-  color: #fff;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -38,6 +44,8 @@ footer.footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 20px 3% 50px 3%;
+  color: #fff;
 }
 
 .footer .contact-box {
@@ -164,6 +172,11 @@ footer.footer {
 
 /*Start media query for responsive*/
 @media only screen and (max-width: 767px) {
+  .footer p {
+    color: #fff;
+    text-align: center;
+    padding: 5px 3%;
+  }
   .footer section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

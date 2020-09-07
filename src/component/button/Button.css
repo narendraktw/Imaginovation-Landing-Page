@@ -1,6 +1,8 @@
 .button {
   position: relative;
   height: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   color: #fff;
   cursor: pointer;
@@ -13,12 +15,12 @@
   text-decoration: none;
 }
 
-.button:focus,
-.button:hover {
+.button:focus {
   outline: none;
 }
 
 .button:hover {
+  outline: none;
   outline: none;
 }
 
@@ -35,16 +37,20 @@
   bottom: 0;
   left: 0;
   background: #ee3124;
+  -webkit-transition: height 500ms, background 500ms;
   transition: height 500ms, background 500ms;
 }
 
-.button:hover span{
+.button:hover span {
   height: 100%;
+  -webkit-transition: height 500ms, background 500ms;
   transition: height 500ms, background 500ms;
 }
 
-.readMore:hover span{
+.readMore:hover span {
   background: #57cad1;
   height: 100%;
+  -webkit-transition: height 500ms, background 500ms;
   transition: height 500ms, background 500ms;
 }
+/*# sourceMappingURL=Button.css.map */

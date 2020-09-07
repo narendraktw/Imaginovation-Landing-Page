@@ -4,6 +4,12 @@ $myHoverColor: #57cad1;
 $myFontSize: 18px;
 $myWidth: 680px;
 
+@mixin flexCenter($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+
 footer.footer {
   background: url("../../assets/images/footer.jpg") left top no-repeat rgba(0,0,0,0);
   background-size: cover;
@@ -13,24 +19,27 @@ footer.footer {
 
 .footer {
   figure {
-    display: flex;
-    justify-content: center;
+    @include flexCenter(row,center);
+    // display: flex;
+    // justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
   p {
     color: #fff;
-    text-align: center;
-    padding: 20px 3%;
+    text-align: left;
   }
 
+  > p{
+      text-align: center;
+      padding:20px 3%;
+    }
+  
   section {
-    display: flex;
+    @include flexCenter(row, space-between);
     padding: 20px 3% 50px 3%;
     color: #fff;
-    flex-direction: row;
-    justify-content: space-between;
   }
 
   .contact-box {
@@ -143,6 +152,14 @@ footer.footer {
 /*Start media query for responsive*/
 
 @media only screen and (max-width: 767px) {
+  .footer{
+    p {
+      color: #fff;
+      text-align: center;
+      padding: 5px 3%;
+    }
+  
+  }
   .footer section {
     flex-direction: column;
 
