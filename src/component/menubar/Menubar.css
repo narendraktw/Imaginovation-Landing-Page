@@ -2,7 +2,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -10,9 +9,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 101;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 101;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
@@ -87,7 +87,8 @@
   height: auto;
 }
 
-.nav-menu .multi-menu a, .nav-menu .multi-menu span {
+.nav-menu .multi-menu a,
+.nav-menu .multi-menu span {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -199,7 +200,8 @@
   display: inline-block;
 }
 
-.contact-details .social-links li a, .contact-details .social-links li i {
+.contact-details .social-links li a,
+.contact-details .social-links li i {
   font-size: 20px;
   color: #fff;
   margin-left: 0;
@@ -214,7 +216,8 @@
   margin-left: 30px;
 }
 
-.contact-details .social-links li:hover a, .contact-details .social-links li:hover i {
+.contact-details .social-links li:hover a,
+.contact-details .social-links li:hover i {
   color: #57cad1;
   -webkit-transition: color 300ms;
   transition: color 300ms;
@@ -233,7 +236,7 @@
 }
 
 .contact-details .site-add .title::after {
-  content: '';
+  content: "";
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   display: block;
   width: 48px;
@@ -246,13 +249,15 @@
   line-height: 36px;
 }
 
-.nav-menu > ul, .contact-details {
+.nav-menu > ul,
+.contact-details {
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.nav-menu > ul::-webkit-scrollbar, .contact-details::-webkit-scrollbar {
+.nav-menu > ul::-webkit-scrollbar,
+.contact-details::-webkit-scrollbar {
   display: none;
 }
 

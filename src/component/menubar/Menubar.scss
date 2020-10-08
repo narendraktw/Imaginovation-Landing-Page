@@ -1,11 +1,11 @@
 .cover {
   display: flex;
-  position: fixed;
   flex-direction: row;
   justify-content: space-between;
-  z-index: 101;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 101;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
@@ -76,7 +76,8 @@
   .multi-menu {
     height: auto;
 
-    a, span {
+    a,
+    span {
       display: inline-flex;
     }
 
@@ -172,7 +173,8 @@
       list-style: none;
       display: inline-block;
 
-      a, i {
+      a,
+      i {
         font-size: 20px;
         color: #fff;
         margin-left: 0;
@@ -185,7 +187,8 @@
       }
 
       &:hover {
-        a, i {
+        a,
+        i {
           color: #57cad1;
           transition: color 300ms;
         }
@@ -204,7 +207,7 @@
       color: #fff;
 
       &::after {
-        content: '';
+        content: "";
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         display: block;
         width: 48px;
@@ -220,13 +223,15 @@
   }
 }
 
-.nav-menu > ul, .contact-details {
+.nav-menu > ul,
+.contact-details {
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.nav-menu > ul::-webkit-scrollbar, .contact-details::-webkit-scrollbar {
+.nav-menu > ul::-webkit-scrollbar,
+.contact-details::-webkit-scrollbar {
   display: none;
 }
 

@@ -18,10 +18,11 @@ function Header() {
   });
 
   const [isToggle, setToggle] = useState(false);
-  const handleClick = (e) => {
+ 
+  const handleClick =  useCallback((e) => {
     e.preventDefault();
     setToggle(!isToggle);
-  };
+  },[isToggle])
 
   const showPopup = useCallback(() => {
     return setStatus({
@@ -35,13 +36,12 @@ function Header() {
 
   return (
     <header className="header">
-      <nav className="nav">
+      <nav className="nav">        
         <figure>
           <Logo width="300px" />
         </figure>
         <menu>
           {isToggle && <Menubar />}
-
           <Button
             className="talkbutton"
             text="LET'S TALK"
@@ -151,12 +151,7 @@ function Header() {
           <button
             aria-label="menu"
             className={isToggle ? "rotate" : ""}
-            onClick={() => {
-              setStatus({
-                ...status,
-                videoStatus: true,
-              });
-            }}
+            onClick={handleClick}
           >
             <img src={Menu} height="21px" alt="menu" />
           </button>
@@ -194,8 +189,8 @@ function Header() {
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/aN3odcBtkFA"
-              frameborder="0"
-              allowfullscreen="true"
+              frameBorder="0"
+              allowFullScreen={true}
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             ></iframe>
           </Modal>

@@ -19,17 +19,16 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  top: 0;
   position: fixed;
   background-color: black;
-  padding: 12px 32px;
+  padding: 12px 35px;
   width: 100vw;
   z-index: 100;
 }
 
 .content {
-  margin: 10% auto !important;
-  width: 55vw !important;
+  margin: 8% auto !important;
+  width: 60vw !important;
   height: 60vh !important;
   background: none;
 }
@@ -110,6 +109,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.nav menu .contactUs .form input::-webkit-input-placeholder, .nav menu .contactUs .form textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+.nav menu .contactUs .form input:-ms-input-placeholder, .nav menu .contactUs .form textarea:-ms-input-placeholder {
+  color: white;
+}
+
+.nav menu .contactUs .form input::-ms-input-placeholder, .nav menu .contactUs .form textarea::-ms-input-placeholder {
+  color: white;
+}
+
+.nav menu .contactUs .form input::placeholder, .nav menu .contactUs .form textarea::placeholder {
+  color: white;
 }
 
 .nav menu .contactUs .form .form-left {
@@ -278,6 +293,14 @@
     margin: 25% auto !important;
     width: 85vw !important;
     height: 45vh !important;
+  }
+}
+
+@media only screen and (max-width: 587px) {
+  .content {
+    margin: 35% auto !important;
+    width: 80vw !important;
+    height: 40vh !important;
   }
 }
 
