@@ -19,10 +19,6 @@ function App() {
       <Services/>
       <Footer />
      
-      {/* <OurWork />
-      <div className="clear"></div>
-      <Services/> */}
-      
     </main>
   );
 }
